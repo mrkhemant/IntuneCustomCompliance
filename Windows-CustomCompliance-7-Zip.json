@@ -1,0 +1,32 @@
+{
+  "Rules": [
+    {
+      "SettingName": "7-Zip",
+      "Operator": "GreaterEquals",
+      "DataType": "Version",
+      "Operand": "24.08",
+      "MoreInfoUrl": "https://google.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "7zip version needs to be upgraded to at least 24.09 Value discovered was {ActualValue}.",
+          "Description": "7zip must be updated. Please refer to the link above."
+        }
+      ]
+    },
+    {
+      "SettingName": "7-Zip",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "Detected",
+      "MoreInfoUrl": "https://google.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "7zip is detected on this system.",
+          "Description": "7zip is installed and running on the system. Please refer to the link above for more details."
+        }
+      ]
+    }
+  ]
+}
